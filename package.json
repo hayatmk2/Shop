@@ -1,0 +1,23 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "MERN shopping app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hayatmk2/Shop.git"
+  },
+  "author": "Hayat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hayatmk2/Shop/issues"
+  },
+  "homepage": "https://github.com/hayatmk2/Shop#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
