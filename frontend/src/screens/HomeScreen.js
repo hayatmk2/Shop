@@ -7,16 +7,10 @@ import Loader from '../components/Loader'
 import Message from '../components/Message'
 
 const HomeScreen = () => {
-  //const [products, setProducts] = useState([]) //local state-only current component see the data
   const dispatch = useDispatch()
   const productList = useSelector((state) => state.productList)
   const {loading, error, products} = productList
   useEffect(() => {
-    // const fetchProducts = async () =>{
-    //   const{data} = await axios.get('/api/products') //{data} the destruction of the object to get just the data part
-    //   setProducts(data)
-    // }  
-    // fetchProducts()
     dispatch(listProducts())
   },[dispatch]) 
   return (
