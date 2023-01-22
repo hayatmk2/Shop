@@ -1,5 +1,6 @@
 import { configureStore, combineReducers} from '@reduxjs/toolkit'
 import { cartReducer } from './reducers/cartReducer'
+import { orderCreateReducer, orderDetailsReducer, orderPayReducer} from './reducers/orderReducer'
 import {productDetailsReducer, productListReducer} from './reducers/productReducers'
 import { userLoginReducer } from './reducers/userReducer'
 
@@ -7,7 +8,10 @@ const rootReducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailsReducer,
   cart: cartReducer,
-  userLogin: userLoginReducer
+  userLogin: userLoginReducer,
+  orderCreate: orderCreateReducer,
+  orderDetails: orderDetailsReducer,
+  orderPay: orderPayReducer,
 
 })
 const paymentMethodFromStorage = localStorage.getItem('paymentMethod')
